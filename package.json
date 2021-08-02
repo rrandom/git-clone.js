@@ -1,8 +1,14 @@
 {
-  "name": "gitclone",
+  "name": "git-clone.js",
+  "description": "A TS/JS implementation of git clone",
+  "homepage": "https://github.com/rrandom/git-clone.js",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "dist/index.js",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rrandom/git-clone.js"
+  },
   "scripts": {
     "test": "jest --coverage --verbose",
     "build": "tsc",
