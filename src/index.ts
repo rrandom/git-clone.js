@@ -6,8 +6,8 @@ import { setLogLevel } from "./utils";
 log.setDefaultLevel(log.levels.INFO);
 setLogLevel();
 
-// yarn cmd ls-remote git://localhost/gitclone
-// yarn cmd clone git://localhost/gitclone
+// yarn cmd ls-remote "git://localhost/git-clone.js"
+// yarn cmd clone "git://localhost/git-clone.js" out
 function main() {
   const argv = minimist(process.argv.slice(2));
   log.debug(argv);

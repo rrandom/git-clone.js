@@ -49,7 +49,7 @@ export function parseRemote(url: string): Remote {
   return {
     getHost: host,
     getPort: port ? +port : undefined,
-    getRepository: repo.split(".").shift() as string,
+    getRepository: repo.replace(/(.+)(.git)\/?$/, (s, s1) => s1),
   };
 }
 
